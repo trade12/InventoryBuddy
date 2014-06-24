@@ -30,3 +30,4 @@ public class InventoryBuddy
             /* Wrap things up */
     }
 }
+    
