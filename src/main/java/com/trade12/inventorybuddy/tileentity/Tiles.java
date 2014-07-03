@@ -6,8 +6,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.IBlockAccess;
 /**
-public enum Tiles {
+public enum Tiles  {
+
    // MACHINE_ENERGETICINCINERATOR(TileEntityEnergeticIncinerator.class, "energeticincinerator"); **Example**
+    // AUTOFEEDERAREA(AutoFeederAreaTile.class, "autofeederarea");
 
     public final Class<? extends TileEntity> tileClass;
     private final String ID;
@@ -48,4 +50,4 @@ public enum Tiles {
     }
 }
 
-*/
+/*

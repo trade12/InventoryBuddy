@@ -10,11 +10,15 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.projectile.EntityEgg;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
 import net.minecraft.world.biome.BiomeGenBase;
+import org.apache.commons.lang3.ObjectUtils;
 
 import java.rmi.registry.Registry;
 
@@ -31,16 +35,14 @@ public class InventoryBuddy
 
     public static boolean LogDebug = true;
 
-
-
     @Mod.EventHandler
     public void preInt(FMLPreInitializationEvent event)
     {
         proxy.registerBlocks();
         //proxy.registerTileEntities();
         proxy.registerItems();
-        EntityRegistry.addSpawn(EntityBuddy.class, 10, 2, 4, EnumCreatureType.monster);
-        EntityList.addMapping(EntityBuddy.class, "Ref.Buddy", 5, 113213, 3523523);
+      //  EntityRegistry.addSpawn(EntityBuddy.class, 10, 2, 4, EnumCreatureType.monster);
+      //  EntityList.addMapping(EntityBuddy.class, "Ref.Buddy", 5, 113213, 3523523);
             /* Network, Blocks and items initialization */
     }
 
